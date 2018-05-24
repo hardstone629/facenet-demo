@@ -6,6 +6,8 @@ __pycache__/
 # myimage
 dataset/orignal/
 dataset/train/
+
+models/20180402-114759/
 # C extensions
 *.so
 
