@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# myimage
+dataset/orignal/
+dataset/train/
 # C extensions
 *.so
 
