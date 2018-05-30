@@ -13,6 +13,14 @@
  ```
  python3 recognitionFromCamera.py
  ```
+ - 录制视频文件
+ ```
+ python3 recordVedio.py
+ ```
+ - 从一段视频（某个人的单独视频）中检查人脸并训练分类器，从另一段视频中识别出前一段视频中的人物。
+ ```
+ python3 demo.py
+ ```
 ## 环境部署
 - 安装python3.6
   这个网上有各种教程，这里就不赘述了。

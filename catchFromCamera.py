@@ -7,10 +7,14 @@ import facenet
 import face as faceLib
 import tensorflow as tf
 
-def catch(perName,maxNum):
+def catch(perName,maxNum,source):
     frame_interval = 1 
     frame_count = 0
-    video_capture = cv2.VideoCapture(0)
+    video_capture = None
+    if source== "camera":
+        video_capture = cv2.VideoCapture(0)
+    else:
+        video_capture = cv2.VideoCapture(source)
     face_detect = faceLib.Detection()
     workpath = os.getcwd()+"/dataset/orignal/"+perName
     if os.path.exists(workpath)!=True:
@@ -48,4 +52,4 @@ def catch(perName,maxNum):
 if __name__ == '__main__':
     face_num_max = int(input("please input max_face_num:"))
     name = input("please input name:")
-    catch(name,face_num_max)
+    catch(name,face_num_max,"camera")

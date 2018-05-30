@@ -6,10 +6,10 @@ import facenet
 import face as faceLib
 import tensorflow as tf
 
-def main():
+def recognition(source):
     frame_interval = 1 
     frame_count = 0
-    video_capture = cv2.VideoCapture(0)
+    video_capture = cv2.VideoCapture(source)
     face_detect = faceLib.Detection()
     face_encoder = faceLib.Encoder()
     # workpath = os.getcwd()+"/dataset/orignal/"+perName
@@ -53,5 +53,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    recognition(0)
     
