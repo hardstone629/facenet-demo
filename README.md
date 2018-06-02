@@ -24,6 +24,11 @@
 ## 环境部署
 - 安装python3.6
   这个网上有各种教程，这里就不赘述了。
+- pip reqirement.txt
+  可以尝试运行以下命令安装环境
+  ```
+  pip install -r requirements.txt
+  ```
 - 安装Tensorflow
 - 预训练模型
   使用了GOOGLE官方的预训练模型，下载地址：
